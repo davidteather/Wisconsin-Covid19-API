@@ -8,9 +8,9 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="wisconsin_covid19",
     packages=setuptools.find_packages(),
-    version="0.0.1",
+    version="0.0.2",
     license="MIT",
-    description="The Unofficial TikTok API Wrapper in Python 3.",
+    description="The Unofficial Wisconsin COVID API Wrapper in Python 3.",
     author="David Teather",
     author_email="contact.davidteather@gmail.com",
     url="https://github.com/davidteather/Wisconsin-Covid19-API",
