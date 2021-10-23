@@ -2,8 +2,8 @@ import wisconsin_covid19
 def test_all():
     count = 0
     for site in wisconsin_covid19.testing_site.all():
-        # There's 3 MN for some reason
-        assert 'WI' in site.STATE or site.STATE == "MN"
+        # There's 3 MN for some reason and some in MI
+        assert 'WI' in site.STATE or site.STATE == "MN" or site.STATE == "MI"
         count += 1
 
     assert count > 0
