@@ -16,10 +16,10 @@ def test_city_search():
 def test_county_search():
     for site in wisconsin_covid19.testing_site.county_search('Dane'):
         assert 'WI' in site.STATE
-        assert site.COUNTY == 'Dane'
+        assert site.COUNTY.replace(" ", "") == 'Dane'
 
 def test_zipcode_search():
     for site in wisconsin_covid19.testing_site.zipcode_search(53703):
         assert 'WI' in site.STATE
-        assert site.COUNTY == 'Dane'
+        assert site.COUNTY.replace(" ", "") == 'Dane'
         assert site.ZIP == 53703
